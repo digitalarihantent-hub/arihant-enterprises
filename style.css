@@ -92,3 +92,23 @@ h1 {
 footer {
   background: #1b2d5e;
 }
+/* Fix logo size in header */
+.site-header {
+  height: 82px !important;
+  min-height: 82px !important;
+  padding: 12px 7% !important;
+}
+
+.brand {
+  height: 54px !important;
+  overflow: hidden !important;
+}
+
+.site-header .brand-logo {
+  display: block !important;
+  width: 220px !important;
+  height: 54px !important;
+  max-width: 58vw !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
