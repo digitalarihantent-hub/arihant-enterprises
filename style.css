@@ -22,3 +22,73 @@ h1 { max-width:650px; font-size:clamp(44px,6vw,78px); line-height:1.03; letter-s
 .contact { display:grid; grid-template-columns:1fr 1fr; gap:70px; background:#fffdf9; }.contact-actions { border-top:1px solid var(--line); }.contact-action { min-height:76px; display:grid; grid-template-columns:110px 1fr 20px; align-items:center; gap:10px; border-bottom:1px solid var(--line); }.contact-action b { font-size:14px; }.contact-action span { color:var(--muted); font-size:14px; overflow-wrap:anywhere; }.contact-action i { color:var(--gold); font-size:22px; font-style:normal; }.address-strip { padding:30px clamp(20px,10vw,160px); display:flex; justify-content:space-between; gap:25px; color:#e5eeeb; font-size:13px; line-height:1.7; background:var(--ink); }.address-strip strong { letter-spacing:.08em; font-size:12px; } footer { padding:22px clamp(20px,10vw,160px); display:flex; justify-content:space-between; gap:15px; flex-wrap:wrap; background:#092a34; color:#91aca9; font-size:12px; }
 @media (max-width:760px) { .site-header{min-height:68px}.hero{padding-top:60px;padding-bottom:60px;grid-template-columns:1fr;gap:20px;min-height:0}.hero-art{height:245px;transform:scale(.8);transform-origin:left top;margin-bottom:-40px}.intro,.contact{grid-template-columns:1fr;gap:30px}.section{padding-top:70px;padding-bottom:70px}.section-heading{display:block}.section-heading h2{margin-top:14px}.service-grid{grid-template-columns:1fr 1fr}.service-card{padding:20px;min-height:170px}.service-card h3{font-size:21px;margin-top:18px}.promise-card{margin:0 -20px}.address-strip{display:block}.address-strip>div+div{margin-top:12px}.contact-action{grid-template-columns:95px 1fr 15px} }
 @media (max-width:430px) { .brand-name{font-size:11px}.header-call{font-size:12px}.hero{padding-left:20px;padding-right:20px}.service-grid{grid-template-columns:1fr}.hero-art{margin-top:5px}.promise-card{padding:70px 24px} }
+/* Arihant logo-matched clean design */
+.site-header {
+  background: #ffffff;
+  border-bottom: 3px solid #f57425;
+}
+
+.hero {
+  grid-template-columns: 1fr;
+  min-height: 470px;
+  background: linear-gradient(135deg, #ffffff 0%, #fff5ef 100%);
+  border-bottom: 1px solid #dfe3ef;
+}
+
+.hero-copy {
+  max-width: 780px;
+  border-left: 7px solid #f57425;
+  padding-left: 28px;
+}
+
+.hero-art {
+  display: none;
+}
+
+h1, h2 {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+h1 {
+  color: #263b78;
+}
+
+.button-primary {
+  background: #263b78;
+}
+
+.button-primary:hover {
+  background: #f57425;
+}
+
+.button-secondary {
+  border-color: #263b78;
+  color: #263b78;
+}
+
+.services {
+  background: #f7f8fc;
+}
+
+.service-card {
+  border: 1px solid #dfe3ef;
+  border-top: 4px solid #263b78;
+}
+
+.service-card:hover {
+  border-top-color: #f57425;
+}
+
+.promise-card {
+  background: #263b78;
+}
+
+.address-strip {
+  background: #263b78;
+}
+
+footer {
+  background: #1b2d5e;
+}
