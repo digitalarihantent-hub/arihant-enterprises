@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arihant Enterprises | Premium Polyester Fabrics & Digital Printing</title>
+  <title>Arihant Enterprises | Polyester Fabric & Digital Printing | Surat</title>
   <meta name="description" content="Arihant Enterprises — Polyester fabric, digital sublimation printing, dyeing and made-to-order textile solutions in Surat." />
   <meta name="theme-color" content="#ffffff" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
   <style>
     :root {
       --brand-orange: #f25c05;
       --brand-orange-light: #fff5ef;
-      --brand-navy: #0f172a;
-      --brand-blue: #1e293b;
+      --brand-navy: #1e2342;
       --bg-slate: #f8fafc;
       --border-color: #e2e8f0;
       --text-main: #334155;
@@ -32,21 +31,23 @@
       line-height: 1.6; 
     }
 
-    /* HEADER & VECTOR SVG LOGO */
+    /* HEADER & BRAND SVG LOGO */
     .site-header {
       position: sticky; top: 0; z-index: 1000;
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--border-color);
-      padding: 14px 6%;
+      border-bottom: 2px solid var(--brand-orange);
+      padding: 12px 6%;
       display: flex; justify-content: space-between; align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
     }
     .brand-link {
       display: flex; align-items: center; text-decoration: none;
     }
-    /* Vector SVG Logo Rendering */
-    .svg-logo {
-      height: 42px; width: auto; display: block;
+    .custom-svg-logo {
+      height: 44px;
+      width: auto;
+      display: block;
     }
 
     .header-actions { display: flex; gap: 10px; align-items: center; }
@@ -59,9 +60,9 @@
     .btn-wa-header { background: #25d366; color: #ffffff; }
     .btn-wa-header:hover { background: #1eb854; box-shadow: 0 4px 12px rgba(37,211,102,0.2); }
 
-    /* HERO SECTION - LIGHT & MODERN LIGHT THEME */
+    /* LIGHT & MODERN HERO SECTION */
     .hero {
-      padding: 80px 6% 70px;
+      padding: 70px 6% 65px;
       background: radial-gradient(circle at top right, rgba(242, 92, 5, 0.05) 0%, transparent 50%),
                   linear-gradient(180deg, #ffffff 0%, var(--bg-slate) 100%);
       border-bottom: 1px solid var(--border-color);
@@ -76,9 +77,9 @@
     .badge {
       display: inline-flex; align-items: center; gap: 8px;
       background: var(--brand-orange-light); color: var(--brand-orange);
-      border: 1px solid rgba(242, 92, 5, 0.2);
+      border: 1px solid rgba(242, 92, 5, 0.25);
       padding: 6px 14px; border-radius: 30px; font-size: 0.82rem; font-weight: 700;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
     .hero h1 {
       font-size: 2.8rem; font-weight: 800; color: var(--brand-navy);
@@ -86,17 +87,14 @@
     }
     .hero h1 span {
       color: var(--brand-orange);
-      background: linear-gradient(120deg, var(--brand-orange), #ff8038);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
     }
     .hero p.lead {
-      font-size: 1.15rem; color: #64748b; margin-bottom: 30px; max-width: 620px; font-weight: 400;
+      font-size: 1.1rem; color: #64748b; margin-bottom: 28px; max-width: 600px; font-weight: 400;
     }
     .hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; }
     
     .btn {
-      padding: 14px 28px; border-radius: 8px; font-weight: 700; text-decoration: none;
+      padding: 13px 26px; border-radius: 8px; font-weight: 700; text-decoration: none;
       display: inline-flex; align-items: center; gap: 8px; font-size: 0.95rem; transition: all 0.2s;
     }
     .btn-primary {
@@ -112,114 +110,120 @@
     .hero-card {
       background: #ffffff; border: 1px solid var(--border-color);
       border-top: 4px solid var(--brand-orange);
-      padding: 35px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+      padding: 32px; border-radius: 14px; box-shadow: 0 10px 25px rgba(0,0,0,0.03);
     }
-    .hero-card h3 { font-size: 1.3rem; color: var(--brand-navy); margin-bottom: 10px; font-weight: 800; }
+    .hero-card h3 { font-size: 1.25rem; color: var(--brand-navy); margin-bottom: 10px; font-weight: 800; }
     .hero-card p { font-size: 0.95rem; color: #64748b; }
 
     /* TRUST BAR */
     .trust-bar {
-      background: #ffffff; padding: 25px 6%; border-bottom: 1px solid var(--border-color);
+      background: #ffffff; padding: 22px 6%; border-bottom: 1px solid var(--border-color);
     }
     .trust-grid {
       max-width: 1200px; margin: 0 auto; display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; text-align: center;
     }
-    .trust-item strong { display: block; font-size: 1.2rem; color: var(--brand-navy); font-weight: 800; }
+    .trust-item strong { display: block; font-size: 1.15rem; color: var(--brand-navy); font-weight: 800; }
     .trust-item span { font-size: 0.85rem; color: #64748b; font-weight: 500; }
 
-    /* SECTION BASE */
-    .section { padding: 70px 6%; max-width: 1200px; margin: 0 auto; }
-    .section-label { color: var(--brand-orange); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
-    .section h2 { font-size: 2.2rem; font-weight: 800; color: var(--brand-navy); margin-bottom: 20px; letter-spacing: -0.5px; }
+    /* SECTIONS */
+    .section { padding: 60px 6%; max-width: 1200px; margin: 0 auto; }
+    .section-label { color: var(--brand-orange); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .section h2 { font-size: 2rem; font-weight: 800; color: var(--brand-navy); margin-bottom: 18px; letter-spacing: -0.5px; }
 
     /* SERVICES GRID */
     .service-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 35px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; margin-top: 30px;
     }
     .service-card {
-      background: #ffffff; padding: 30px; border-radius: 12px; border: 1px solid var(--border-color);
+      background: #ffffff; padding: 28px; border-radius: 12px; border: 1px solid var(--border-color);
       transition: all 0.25s ease;
     }
-    .service-card:hover { transform: translateY(-4px); border-color: var(--brand-orange); box-shadow: 0 12px 24px rgba(0,0,0,0.05); }
+    .service-card:hover { transform: translateY(-4px); border-color: var(--brand-orange); box-shadow: 0 10px 20px rgba(0,0,0,0.04); }
     .service-card .num {
-      color: var(--brand-orange); font-weight: 800; font-size: 0.9rem; background: var(--brand-orange-light);
-      padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 15px;
+      color: var(--brand-orange); font-weight: 800; font-size: 0.85rem; background: var(--brand-orange-light);
+      padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 14px;
     }
-    .service-card h3 { font-size: 1.25rem; font-weight: 700; color: var(--brand-navy); margin-bottom: 10px; }
-    .service-card p { color: #64748b; font-size: 0.95rem; }
+    .service-card h3 { font-size: 1.2rem; font-weight: 700; color: var(--brand-navy); margin-bottom: 8px; }
+    .service-card p { color: #64748b; font-size: 0.92rem; }
 
     /* PROMISE SECTION */
     .promise-box {
-      background: linear-gradient(135deg, var(--brand-navy) 0%, #1e293b 100%);
-      color: #ffffff; padding: 45px 35px; border-radius: 20px; margin-top: 20px;
-      box-shadow: 0 15px 35px rgba(15, 23, 42, 0.15);
+      background: var(--brand-navy);
+      color: #ffffff; padding: 40px 30px; border-radius: 16px; margin-top: 20px;
+      border-left: 6px solid var(--brand-orange);
     }
     .promise-box h2 { color: #ffffff; margin-bottom: 10px; }
-    .promise-box p { color: #94a3b8; margin-bottom: 25px; font-size: 1.05rem; }
+    .promise-box p { color: #cbd5e1; margin-bottom: 22px; font-size: 1rem; }
     .promise-tags { display: flex; flex-wrap: wrap; gap: 10px; }
     .promise-tags span {
-      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
-      color: #ffffff; padding: 8px 18px; border-radius: 30px; font-size: 0.9rem; font-weight: 600;
+      background: rgba(255,255,255,0.12); color: #ffffff; padding: 7px 16px; border-radius: 30px; font-size: 0.85rem; font-weight: 600;
     }
 
     /* CONTACT ACTIONS */
     .contact-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; margin-top: 30px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 25px;
     }
     .contact-card {
-      background: #ffffff; border: 1px solid var(--border-color); padding: 22px; border-radius: 12px;
+      background: #ffffff; border: 1px solid var(--border-color); padding: 20px; border-radius: 10px;
       text-decoration: none; color: inherit; transition: all 0.2s ease; display: block;
     }
-    .contact-card:hover { border-color: var(--brand-orange); box-shadow: 0 6px 18px rgba(0,0,0,0.05); }
-    .contact-card strong { font-size: 1.1rem; color: var(--brand-navy); display: block; margin-bottom: 4px; }
-    .contact-card span { font-size: 0.9rem; color: #64748b; }
+    .contact-card:hover { border-color: var(--brand-orange); box-shadow: 0 4px 14px rgba(0,0,0,0.04); }
+    .contact-card strong { font-size: 1.05rem; color: var(--brand-navy); display: block; margin-bottom: 4px; }
+    .contact-card span { font-size: 0.88rem; color: #64748b; }
 
     /* ADDRESS STRIP & GSTIN */
     .address-strip {
-      background: var(--bg-slate); border-top: 1px solid var(--border-color); padding: 35px 6%;
-      font-size: 0.95rem; color: #475569;
+      background: var(--brand-navy); color: #cbd5e1; padding: 35px 6%;
+      font-size: 0.95rem; border-top: 3px solid var(--brand-orange);
     }
     .address-wrapper {
-      max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;
+      max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px;
     }
     @media (min-width: 768px) {
       .address-wrapper { flex-direction: row; justify-content: space-between; align-items: center; }
     }
+    .address-wrapper strong { color: #ffffff; }
     .gstin-badge {
-      background: var(--brand-navy); color: #ffffff; padding: 10px 20px; border-radius: 8px;
+      background: var(--brand-orange); color: #ffffff; padding: 10px 20px; border-radius: 8px;
       font-weight: 700; font-size: 1rem; display: inline-block; letter-spacing: 0.5px;
     }
 
     /* FOOTER */
     footer {
-      background: #ffffff; border-top: 1px solid var(--border-color);
-      padding: 20px 6%; font-size: 0.85rem; color: #94a3b8; text-align: center;
+      background: #111528; color: #64748b;
+      padding: 18px 6%; font-size: 0.85rem; text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER WITH VECTOR SVG LOGO (No Image Box Issue!) -->
+  <!-- HEADER WITH NEW HIGH-RES VECTOR SVG LOGO -->
   <header class="site-header">
     <a href="#top" class="brand-link" aria-label="Arihant Enterprises Home">
-      <svg class="svg-logo" viewBox="0 0 340 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Orange Triangle Mark -->
-        <polygon points="25,5 48,45 2,45" fill="#F25C05" />
-        <!-- Main Brand Text -->
-        <text x="56" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="35" fill="#0F172A" letter-spacing="-0.5">rihant</text>
-        <!-- Enterprises Text -->
-        <text x="58" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="10" fill="#64748B" letter-spacing="4">ENTERPRISES</text>
+      <svg class="custom-svg-logo" viewBox="0 0 320 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Orange Brand Triangle Icon -->
+        <path d="M22 6L42 42H2L22 6Z" fill="#F25C05"/>
+        
+        <!-- Modern Navy Brand Name "arihant" -->
+        <text x="50" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="34" fill="#1E2342" letter-spacing="-0.8">arihant</text>
+        
+        <!-- Subtitle "E N T E R P R I S E S" -->
+        <text x="52" y="49" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9.5" fill="#64748B" letter-spacing="4.2">ENTERPRISES</text>
+        
+        <!-- Underline accent bar -->
+        <rect x="52" y="51" width="220" height="1" fill="#E2E8F0"/>
       </svg>
     </a>
+
     <div class="header-actions">
-      <a class="btn-header btn-call-header" href="tel:+919825336767">📞 Call</a>
+      <a class="btn-header btn-call-header" href="tel:+919825336767">📞 Call Us</a>
       <a class="btn-header btn-wa-header" href="https://wa.me/919825336767?text=Hello%20Arihant%20Enterprises%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO SECTION -->
+    <!-- LIGHT THEME HERO SECTION -->
     <section class="hero">
       <div class="hero-container">
         <div class="hero-left">
@@ -237,7 +241,7 @@
         </div>
         <div class="hero-card">
           <h3>QUALITY IN EVERY ROLL</h3>
-          <p>Full production support from raw fabric to finished rolls with guaranteed GSM and zero-bleed color fastness.</p>
+          <p>Full production support from raw polyester fabric to finished rolls with guaranteed GSM and zero-bleed color fastness.</p>
         </div>
       </div>
     </section>
@@ -268,7 +272,7 @@
     <section class="section" id="about">
       <div class="section-label">01 / About Us</div>
       <h2>Built around quality, finished with care.</h2>
-      <p style="font-size: 1.05rem; color: #475569; margin-bottom: 15px;">
+      <p style="font-size: 1.05rem; color: #475569; margin-bottom: 12px;">
         Located in Surat, Gujarat, <strong>Arihant Enterprises</strong> is a reliable manufacturing partner for polyester fabrics and digital textile processing. We specialize in digital sublimation printing, commercial fabric dyeing, specialized job work, and made-to-order fabric developments.
       </p>
       <p style="font-size: 1.05rem; color: #475569;">
@@ -357,11 +361,11 @@
       </div>
     </section>
 
-    <!-- ADDRESS STRIP -->
+    <!-- ADDRESS STRIP & GSTIN -->
     <section class="address-strip">
       <div class="address-wrapper">
         <div>
-          <strong style="color: var(--brand-navy); font-size: 1.1rem; display: block; margin-bottom: 4px;">ARIHANT ENTERPRISES</strong>
+          <strong style="font-size: 1.1rem; display: block; margin-bottom: 4px;">ARIHANT ENTERPRISES</strong>
           1st &amp; 2nd Floor, Plot No. 4021–22, Diamond Eco Park, Gabheni Circle,<br />
           Near E-Com Warehouse, Sachin INA, Surat – 394230, Gujarat, India
         </div>
