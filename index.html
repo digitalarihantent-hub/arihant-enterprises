@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Arihant Enterprises | Polyester Fabric & Digital Sublimation | Surat</title>
   <meta name="description" content="Arihant Enterprises — Leading manufacturer of polyester fabric, Super Poly, Super Malai, digital sublimation printing & dyed fabric in Surat." />
   <meta name="theme-color" content="#ffffff" />
@@ -22,215 +22,244 @@
       --text-main: #334155;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
     html { scroll-behavior: smooth; }
     body { 
       font-family: 'Plus Jakarta Sans', sans-serif; 
       color: var(--text-main); 
       background-color: #ffffff; 
       line-height: 1.6; 
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* HEADER */
+    /* HEADER - MOBILE OPTIMIZED */
     .site-header {
       position: sticky; top: 0; z-index: 1000;
       background: #ffffff;
       border-bottom: 2px solid var(--brand-orange);
-      padding: 10px 6%;
+      padding: 12px 4%;
       display: flex; justify-content: space-between; align-items: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
     }
     .brand-link { display: flex; align-items: center; text-decoration: none; }
     .original-logo-img {
-      height: 52px; width: auto; object-fit: contain; display: block;
+      height: 42px; width: auto; object-fit: contain; display: block;
       mix-blend-mode: multiply; filter: contrast(120%) brightness(102%);
     }
+    @media (min-width: 768px) {
+      .site-header { padding: 12px 6%; }
+      .original-logo-img { height: 50px; }
+    }
 
-    .header-actions { display: flex; gap: 10px; align-items: center; }
+    .header-actions { display: flex; gap: 8px; align-items: center; }
     .btn-header {
-      padding: 9px 18px; border-radius: 8px; font-weight: 700; font-size: 0.88rem;
-      text-decoration: none; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 14px; border-radius: 8px; font-weight: 700; font-size: 0.82rem;
+      text-decoration: none; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 4px;
+      white-space: nowrap;
     }
     .btn-call-header { background: #f1f5f9; color: var(--brand-navy); }
-    .btn-call-header:hover { background: #e2e8f0; }
     .btn-wa-header { background: #25d366; color: #ffffff; }
-    .btn-wa-header:hover { background: #1eb854; box-shadow: 0 4px 12px rgba(37,211,102,0.2); }
 
-    /* HERO SECTION */
+    /* HERO SECTION - MOBILE PERFECT */
     .hero {
-      padding: 60px 6% 55px;
+      padding: 40px 4% 40px;
       background: linear-gradient(180deg, #ffffff 0%, var(--bg-slate) 100%);
       border-bottom: 1px solid var(--border-color);
+      text-align: center;
+    }
+    @media (min-width: 900px) {
+      .hero { padding: 60px 6% 55px; text-align: left; }
     }
     .hero-container {
       max-width: 1200px; margin: 0 auto;
-      display: grid; grid-template-columns: 1fr; gap: 35px; align-items: center;
+      display: grid; grid-template-columns: 1fr; gap: 30px; align-items: center;
     }
     @media (min-width: 900px) {
       .hero-container { grid-template-columns: 1.2fr 0.8fr; }
     }
     .badge {
-      display: inline-flex; align-items: center; gap: 8px;
+      display: inline-flex; align-items: center; gap: 6px;
       background: var(--brand-orange-light); color: var(--brand-orange);
       border: 1px solid rgba(232, 83, 36, 0.25);
-      padding: 6px 14px; border-radius: 30px; font-size: 0.82rem; font-weight: 700;
-      margin-bottom: 16px;
+      padding: 6px 12px; border-radius: 30px; font-size: 0.78rem; font-weight: 700;
+      margin-bottom: 14px;
     }
     .hero h1 {
-      font-size: 2.7rem; font-weight: 800; color: var(--brand-navy);
-      line-height: 1.25; margin-bottom: 16px; letter-spacing: -0.5px;
+      font-size: 2.1rem; font-weight: 800; color: var(--brand-navy);
+      line-height: 1.2; margin-bottom: 14px; letter-spacing: -0.5px;
+    }
+    @media (min-width: 768px) {
+      .hero h1 { font-size: 2.7rem; }
     }
     .hero h1 span { color: var(--brand-orange); }
     .hero p.lead {
-      font-size: 1.1rem; color: #64748b; margin-bottom: 25px; max-width: 600px; font-weight: 400;
+      font-size: 0.98rem; color: #64748b; margin-bottom: 22px; max-width: 600px; font-weight: 400; margin-left: auto; margin-right: auto;
     }
-    .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+    @media (min-width: 900px) { .hero p.lead { margin-left: 0; margin-right: 0; font-size: 1.1rem; } }
+    
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    @media (min-width: 900px) { .hero-buttons { justify-content: flex-start; } }
     
     .btn {
-      padding: 13px 26px; border-radius: 8px; font-weight: 700; text-decoration: none;
-      display: inline-flex; align-items: center; gap: 8px; font-size: 0.95rem; transition: all 0.2s; border: none; cursor: pointer;
+      padding: 12px 22px; border-radius: 8px; font-weight: 700; text-decoration: none;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.92rem; 
+      transition: all 0.2s; border: none; cursor: pointer; width: 100%;
     }
+    @media (min-width: 480px) { .btn { width: auto; } }
     .btn-primary { background: var(--brand-orange); color: #ffffff; box-shadow: 0 4px 14px rgba(232, 83, 36, 0.25); }
-    .btn-primary:hover { background: #d24317; transform: translateY(-2px); }
     .btn-secondary { background: #ffffff; color: var(--brand-navy); border: 1px solid var(--border-color); }
-    .btn-secondary:hover { background: #f8fafc; border-color: #cbd5e1; }
 
     .hero-card {
       background: #ffffff; border: 1px solid var(--border-color);
       border-top: 4px solid var(--brand-orange);
-      padding: 28px; border-radius: 14px; box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+      padding: 22px; border-radius: 14px; box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+      text-align: left;
     }
-    .hero-card h3 { font-size: 1.2rem; color: var(--brand-navy); margin-bottom: 8px; font-weight: 800; }
-    .hero-card p { font-size: 0.92rem; color: #64748b; }
+    .hero-card h3 { font-size: 1.1rem; color: var(--brand-navy); margin-bottom: 6px; font-weight: 800; }
+    .hero-card p { font-size: 0.88rem; color: #64748b; }
 
-    /* B2B HIGHLIGHT BOX (MOQ & TIMELINES) */
+    /* B2B HIGHLIGHT BOX */
     .b2b-highlight {
-      background: var(--brand-navy); color: #ffffff; padding: 35px 6%; border-bottom: 1px solid var(--border-color);
+      background: var(--brand-navy); color: #ffffff; padding: 30px 4%; border-bottom: 1px solid var(--border-color);
     }
+    @media (min-width: 768px) { .b2b-highlight { padding: 35px 6%; } }
     .b2b-grid {
       max-width: 1200px; margin: 0 auto; display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;
+      grid-template-columns: 1fr; gap: 16px;
     }
+    @media (min-width: 600px) { .b2b-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 992px) { .b2b-grid { grid-template-columns: repeat(4, 1fr); } }
+    
     .b2b-card {
       background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12);
-      padding: 22px; border-radius: 12px; border-left: 4px solid var(--brand-orange);
+      padding: 18px; border-radius: 12px; border-left: 4px solid var(--brand-orange);
     }
-    .b2b-card strong { color: var(--brand-orange); font-size: 1.1rem; display: block; margin-bottom: 6px; }
-    .b2b-card p { color: #cbd5e1; font-size: 0.92rem; margin: 0; }
+    .b2b-card strong { color: var(--brand-orange); font-size: 1.02rem; display: block; margin-bottom: 4px; }
+    .b2b-card p { color: #cbd5e1; font-size: 0.88rem; margin: 0; }
 
-    /* SECTIONS GENERAL */
-    .section { padding: 60px 6%; max-width: 1200px; margin: 0 auto; }
-    .section-label { color: var(--brand-orange); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
-    .section h2 { font-size: 2rem; font-weight: 800; color: var(--brand-navy); margin-bottom: 18px; letter-spacing: -0.5px; }
+    /* SECTIONS */
+    .section { padding: 45px 4%; max-width: 1200px; margin: 0 auto; }
+    @media (min-width: 768px) { .section { padding: 60px 6%; } }
+    .section-label { color: var(--brand-orange); font-weight: 800; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+    .section h2 { font-size: 1.7rem; font-weight: 800; color: var(--brand-navy); margin-bottom: 14px; letter-spacing: -0.5px; }
+    @media (min-width: 768px) { .section h2 { font-size: 2rem; } }
 
     /* CATALOG GRID */
     .catalog-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 25px;
+      display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 22px;
     }
+    @media (min-width: 600px) { .catalog-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 992px) { .catalog-grid { grid-template-columns: repeat(4, 1fr); } }
+    
     .catalog-card {
-      background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 22px;
+      background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 20px;
       transition: all 0.2s ease;
     }
-    .catalog-card:hover { border-color: var(--brand-orange); box-shadow: 0 8px 20px rgba(0,0,0,0.04); }
     .catalog-card .tag {
       background: var(--brand-orange-light); color: var(--brand-orange); font-weight: 700;
-      font-size: 0.78rem; padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 10px;
+      font-size: 0.75rem; padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px;
     }
-    .catalog-card h3 { font-size: 1.15rem; color: var(--brand-navy); font-weight: 700; margin-bottom: 6px; }
-    .catalog-card p { font-size: 0.9rem; color: #64748b; }
+    .catalog-card h3 { font-size: 1.08rem; color: var(--brand-navy); font-weight: 700; margin-bottom: 6px; }
+    .catalog-card p { font-size: 0.86rem; color: #64748b; }
 
     /* SERVICES GRID */
     .service-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; margin-top: 30px;
+      display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 25px;
     }
+    @media (min-width: 600px) { .service-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 992px) { .service-grid { grid-template-columns: repeat(4, 1fr); } }
+
     .service-card {
-      background: #ffffff; padding: 28px; border-radius: 12px; border: 1px solid var(--border-color);
-      transition: all 0.25s ease;
+      background: #ffffff; padding: 22px; border-radius: 12px; border: 1px solid var(--border-color);
     }
-    .service-card:hover { transform: translateY(-4px); border-color: var(--brand-orange); box-shadow: 0 10px 20px rgba(0,0,0,0.04); }
     .service-card .num {
-      color: var(--brand-orange); font-weight: 800; font-size: 0.85rem; background: var(--brand-orange-light);
-      padding: 4px 10px; border-radius: 6px; display: inline-block; margin-bottom: 14px;
+      color: var(--brand-orange); font-weight: 800; font-size: 0.82rem; background: var(--brand-orange-light);
+      padding: 3px 8px; border-radius: 6px; display: inline-block; margin-bottom: 12px;
     }
-    .service-card h3 { font-size: 1.2rem; font-weight: 700; color: var(--brand-navy); margin-bottom: 8px; }
-    .service-card p { color: #64748b; font-size: 0.92rem; }
+    .service-card h3 { font-size: 1.12rem; font-weight: 700; color: var(--brand-navy); margin-bottom: 6px; }
+    .service-card p { color: #64748b; font-size: 0.88rem; }
 
     /* INQUIRY FORM */
     .inquiry-wrapper {
-      display: grid; grid-template-columns: 1fr; gap: 35px; margin-top: 25px;
+      display: grid; grid-template-columns: 1fr; gap: 25px; margin-top: 22px;
     }
-    @media (min-width: 850px) {
+    @media (min-width: 900px) {
       .inquiry-wrapper { grid-template-columns: 1fr 1.2fr; align-items: start; }
     }
     .inquiry-info {
-      background: var(--brand-navy); color: #ffffff; padding: 35px; border-radius: 16px; border-left: 6px solid var(--brand-orange);
+      background: var(--brand-navy); color: #ffffff; padding: 25px; border-radius: 14px; border-left: 5px solid var(--brand-orange);
     }
-    .inquiry-info h3 { font-size: 1.5rem; margin-bottom: 10px; }
-    .inquiry-info p { color: #cbd5e1; font-size: 0.95rem; margin-bottom: 25px; }
-    .contact-list { list-style: none; display: flex; flex-direction: column; gap: 15px; }
-    .contact-list li { display: flex; gap: 12px; align-items: center; font-size: 0.95rem; }
+    @media (min-width: 768px) { .inquiry-info { padding: 32px; } }
+    .inquiry-info h3 { font-size: 1.35rem; margin-bottom: 8px; }
+    .inquiry-info p { color: #cbd5e1; font-size: 0.9rem; margin-bottom: 20px; }
+    .contact-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .contact-list li { display: flex; gap: 10px; align-items: center; font-size: 0.9rem; word-break: break-all; }
 
     .inquiry-form-card {
-      background: #ffffff; border: 1px solid var(--border-color); padding: 32px; border-radius: 16px;
+      background: #ffffff; border: 1px solid var(--border-color); padding: 24px; border-radius: 14px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.03);
     }
-    .form-group { margin-bottom: 18px; }
-    .form-group label { display: block; font-weight: 700; font-size: 0.88rem; color: var(--brand-navy); margin-bottom: 6px; }
+    @media (min-width: 768px) { .inquiry-form-card { padding: 30px; } }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-weight: 700; font-size: 0.85rem; color: var(--brand-navy); margin-bottom: 6px; }
     .form-control {
-      width: 100%; padding: 12px 16px; border: 1px solid var(--border-color); border-radius: 8px;
-      font-family: inherit; font-size: 0.95rem; transition: border-color 0.2s;
+      width: 100%; padding: 12px 14px; border: 1px solid var(--border-color); border-radius: 8px;
+      font-family: inherit; font-size: 1rem; /* 16px avoids auto-zoom on iPhones */
+      background: #fff;
     }
     .form-control:focus { outline: none; border-color: var(--brand-orange); box-shadow: 0 0 0 3px rgba(232, 83, 36, 0.1); }
-    textarea.form-control { resize: vertical; min-height: 100px; }
+    textarea.form-control { resize: vertical; min-height: 90px; }
 
     /* CONTACT QUICK CARDS */
     .contact-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 25px;
+      display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 20px;
     }
+    @media (min-width: 600px) { .contact-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 992px) { .contact-grid { grid-template-columns: repeat(4, 1fr); } }
+
     .contact-card {
-      background: #ffffff; border: 1px solid var(--border-color); padding: 20px; border-radius: 10px;
-      text-decoration: none; color: inherit; transition: all 0.2s ease; display: block;
+      background: #ffffff; border: 1px solid var(--border-color); padding: 18px; border-radius: 10px;
+      text-decoration: none; color: inherit; display: block;
     }
-    .contact-card:hover { border-color: var(--brand-orange); box-shadow: 0 4px 14px rgba(0,0,0,0.04); }
-    .contact-card strong { font-size: 1.05rem; color: var(--brand-navy); display: block; margin-bottom: 4px; }
-    .contact-card span { font-size: 0.88rem; color: #64748b; }
+    .contact-card strong { font-size: 1rem; color: var(--brand-navy); display: block; margin-bottom: 2px; }
+    .contact-card span { font-size: 0.84rem; color: #64748b; word-break: break-all; }
 
     /* ADDRESS STRIP & GSTIN */
     .address-strip {
-      background: var(--brand-navy); color: #cbd5e1; padding: 35px 6%;
-      font-size: 0.95rem; border-top: 3px solid var(--brand-orange);
+      background: var(--brand-navy); color: #cbd5e1; padding: 30px 4%;
+      font-size: 0.9rem; border-top: 3px solid var(--brand-orange);
     }
+    @media (min-width: 768px) { .address-strip { padding: 35px 6%; } }
     .address-wrapper {
-      max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px;
+      max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;
     }
     @media (min-width: 768px) {
       .address-wrapper { flex-direction: row; justify-content: space-between; align-items: center; }
     }
     .address-wrapper strong { color: #ffffff; }
     .gstin-badge {
-      background: var(--brand-orange); color: #ffffff; padding: 10px 20px; border-radius: 8px;
-      font-weight: 700; font-size: 1rem; display: inline-block; letter-spacing: 0.5px;
+      background: var(--brand-orange); color: #ffffff; padding: 8px 16px; border-radius: 8px;
+      font-weight: 700; font-size: 0.92rem; display: inline-block; letter-spacing: 0.5px;
     }
 
-    /* FLOATING WHATSAPP BUTTON */
+    /* FLOATING WHATSAPP BUTTON - APPLE & ANDROID TOUCH FRIENDLY */
     .floating-wa {
-      position: fixed; bottom: 25px; right: 25px; z-index: 2000;
-      background: #25d366; color: #ffffff; padding: 12px 20px; border-radius: 30px;
-      font-weight: 700; font-size: 0.95rem; text-decoration: none;
-      box-shadow: 0 8px 20px rgba(37,211,102,0.35); display: flex; align-items: center; gap: 8px;
-      transition: transform 0.2s;
+      position: fixed; bottom: 20px; right: 20px; z-index: 2000;
+      background: #25d366; color: #ffffff; padding: 12px 18px; border-radius: 30px;
+      font-weight: 700; font-size: 0.9rem; text-decoration: none;
+      box-shadow: 0 6px 20px rgba(37,211,102,0.4); display: flex; align-items: center; gap: 6px;
+      -webkit-tap-highlight-color: transparent;
     }
-    .floating-wa:hover { transform: scale(1.05); }
 
     /* FOOTER */
-    footer { background: #111528; color: #64748b; padding: 18px 6%; font-size: 0.85rem; text-align: center; }
+    footer { background: #111528; color: #64748b; padding: 20px 4%; font-size: 0.82rem; text-align: center; }
   </style>
 </head>
 <body>
 
   <!-- FLOATING WHATSAPP BUTTON -->
   <a class="floating-wa" href="https://wa.me/919825336767?text=Hello%20Arihant%20Enterprises%2C%20I%20have%20a%20bulk%20fabric%20requirement." target="_blank" rel="noopener">
-    💬 WhatsApp Inquiry
+    💬 WhatsApp Chat
   </a>
 
   <!-- HEADER -->
@@ -240,7 +269,7 @@
     </a>
 
     <div class="header-actions">
-      <a class="btn-header btn-call-header" href="tel:+919825336767">📞 Call Us</a>
+      <a class="btn-header btn-call-header" href="tel:+919825336767">📞 Call</a>
       <a class="btn-header btn-wa-header" href="https://wa.me/919825336767?text=Hello%20Arihant%20Enterprises%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </header>
@@ -253,7 +282,7 @@
           <div class="badge">📍 Surat, Gujarat · Industrial Textile Processing</div>
           <h1>Polyester Fabric & <span>Digital Sublimation Printing</span></h1>
           <p class="lead">
-            Manufacturer & exporter of Super Poly, Super Malai, Dyed Fabrics & Digital Sublimation Prints for Kids Wear, Baba Suits, Nightwear, Shorts & Jackets.
+            Manufacturer & supplier of Super Poly, Super Malai, Dyed Fabrics & Digital Sublimation Prints for Kids Wear, Nightwear, Shorts & Jackets.
           </p>
           <div class="hero-buttons">
             <a class="btn btn-primary" href="https://wa.me/919825336767?text=Hello%20Arihant%20Enterprises%2C%20I%20want%20to%20enquire%20about%20fabric%20prices." target="_blank" rel="noopener">
@@ -270,7 +299,7 @@
       </div>
     </section>
 
-    <!-- B2B ORDER HIGHLIGHTS (MOQ & TIMELINES) -->
+    <!-- B2B ORDER HIGHLIGHTS -->
     <section class="b2b-highlight">
       <div class="b2b-grid">
         <div class="b2b-card">
@@ -282,12 +311,12 @@
           <p>Minimum 240 kg per Shade/Color.</p>
         </div>
         <div class="b2b-card">
-          <strong>⚡ 2-Day Express Delivery</strong>
+          <strong>⚡ 2-Day Express</strong>
           <p>If party provides ready design and fabric is ready.</p>
         </div>
         <div class="b2b-card">
           <strong>📅 7-Day Fresh Delivery</strong>
-          <p>Complete fresh fabric manufacturing & processing batch.</p>
+          <p>Complete fresh fabric manufacturing batch.</p>
         </div>
       </div>
     </section>
@@ -296,23 +325,23 @@
     <section class="section" id="catalog">
       <div class="section-label">01 / Products & Applications</div>
       <h2>Our Fabric Qualities & Uses</h2>
-      <p style="color: #64748b;">We supply high-grade polyester knitted & woven fabrics tailored for garment manufacturers.</p>
+      <p style="color: #64748b; font-size: 0.92rem;">We supply high-grade polyester knitted & woven fabrics tailored for garment manufacturers.</p>
 
       <div class="catalog-grid">
         <div class="catalog-card">
           <span class="tag">Fabric Quality</span>
           <h3>Super Poly Full Dull</h3>
-          <p>Premium smooth finish fabric ideal for tracksuits, jackets, and sportswear.</p>
+          <p>Smooth finish fabric ideal for tracksuits, jackets, and sportswear.</p>
         </div>
         <div class="catalog-card">
           <span class="tag">Fabric Quality</span>
           <h3>Super Malai with Peaching</h3>
-          <p>Ultra-soft peaches touch fabric designed for comfortable nightwear and kids wear.</p>
+          <p>Ultra-soft peach touch fabric designed for comfortable nightwear and kids wear.</p>
         </div>
         <div class="catalog-card">
           <span class="tag">Processing</span>
           <h3>Dyed Fabric Supply</h3>
-          <p>Commercial shade-matched dyed fabric supplied with MOQ of 240 kg per shade.</p>
+          <p>Commercial shade-matched dyed fabric supplied with MOQ 240 kg per shade.</p>
         </div>
         <div class="catalog-card">
           <span class="tag">Processing</span>
@@ -322,22 +351,22 @@
         <div class="catalog-card">
           <span class="tag">Garment Category</span>
           <h3>Kids Wear & Baba Suits</h3>
-          <p>Soft, skin-friendly printed & dyed fabrics for kids regular & daily wear.</p>
+          <p>Soft, skin-friendly printed & dyed fabrics for daily wear.</p>
         </div>
         <div class="catalog-card">
           <span class="tag">Garment Category</span>
           <h3>Nightwear & Pajamas</h3>
-          <p>Comfortable stretch & peached fabrics for loungewear, pajamas & night suits.</p>
+          <p>Comfortable stretch & peached fabrics for loungewear and pajamas.</p>
         </div>
         <div class="catalog-card">
           <span class="tag">Garment Category</span>
           <h3>Jackets & Trackwear</h3>
-          <p>Durable Super Poly fabrics suited for light jackets and outerwear.</p>
+          <p>Durable Super Poly fabrics suited for light jackets.</p>
         </div>
         <div class="catalog-card">
           <span class="tag">Garment Category</span>
           <h3>Mens & Ladies Shorts</h3>
-          <p>Breathable printed & plain fabrics for sports shorts and casual wear.</p>
+          <p>Breathable printed & plain fabrics for sports shorts.</p>
         </div>
       </div>
     </section>
@@ -445,7 +474,7 @@
     <section class="address-strip">
       <div class="address-wrapper">
         <div>
-          <strong style="font-size: 1.1rem; display: block; margin-bottom: 4px;">ARIHANT ENTERPRISES</strong>
+          <strong style="font-size: 1.05rem; display: block; margin-bottom: 4px;">ARIHANT ENTERPRISES</strong>
           1st &amp; 2nd Floor, Plot No. 4021–22, Diamond Eco Park, Gabheni Circle,<br />
           Near E-Com Warehouse, Sachin INA, Surat – 394230, Gujarat, India
         </div>
@@ -466,7 +495,7 @@
     function sendToWhatsApp(e) {
       e.preventDefault();
       const name = document.getElementById('fullName').value;
-      const phone = document.getElementById('phone').value;
+      const phone = document.getElementById('phone.value') || document.getElementById('phone').value;
       const service = document.getElementById('serviceType').value;
       const message = document.getElementById('message').value;
 
