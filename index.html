@@ -300,3 +300,320 @@
   </script>
 </body>
 </html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arihant Enterprises | Polyester Fabric Solutions | Surat</title>
+  <meta name="description" content="Arihant Enterprises — Polyester fabric, digital sublimation printing, dyeing and made-to-order textile solutions in Surat." />
+  <meta name="theme-color" content="#1a2a40" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Brand Color Variables Matched Exactly to Logo */
+    :root {
+      --brand-navy: #1a2a40;      /* Logo Navy Blue */
+      --brand-orange: #e85a24;    /* Logo Orange Accent */
+      --brand-orange-hover: #d24b18;
+      --bg-light: #f8fafc;
+      --text-dark: #0f172a;
+      --text-muted: #475569;
+    }
+
+    /* Global Reset & Base Styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; color: var(--text-dark); background-color: var(--bg-light); line-height: 1.6; }
+
+    /* Clean Header - Single Logo Only */
+    .site-header {
+      position: sticky; top: 0; z-index: 1000;
+      background: #ffffff; border-bottom: 2px solid var(--brand-orange);
+      padding: 12px 6%; display: flex; justify-content: space-between; align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .brand { display: flex; align-items: center; text-decoration: none; }
+    .brand-logo-img { height: 48px; width: auto; object-fit: contain; }
+
+    .header-actions { display: flex; gap: 12px; align-items: center; }
+    .header-link {
+      text-decoration: none; font-size: 0.9rem; font-weight: 600; padding: 9px 16px; border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+    .link-call { background: #e2e8f0; color: var(--brand-navy); }
+    .link-call:hover { background: #cbd5e1; }
+    .link-wa { background: #25d366; color: #ffffff; }
+    .link-wa:hover { background: #1eb854; }
+
+    /* Hero Section Matched to Navy & Orange */
+    .hero {
+      padding: 70px 6% 60px;
+      background: linear-gradient(135deg, var(--brand-navy) 0%, #0d1726 100%);
+      color: #ffffff; display: grid; grid-template-columns: 1fr; gap: 30px; align-items: center;
+    }
+    @media (min-width: 850px) {
+      .hero { grid-template-columns: 1.2fr 0.8fr; padding: 80px 8%; }
+    }
+    .eyebrow {
+      display: inline-block; background: rgba(232, 90, 36, 0.2); color: #ff9d76; border: 1px solid var(--brand-orange);
+      padding: 4px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 16px;
+    }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: 2.6rem; line-height: 1.2; margin-bottom: 18px; }
+    .hero h1 em { font-style: italic; color: var(--brand-orange); }
+    .hero .lead { font-size: 1.1rem; color: #cbd5e1; margin-bottom: 28px; max-width: 600px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+    
+    .button {
+      padding: 12px 24px; border-radius: 6px; font-weight: 700; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s, background 0.2s;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary { background: var(--brand-orange); color: #ffffff; }
+    .button-primary:hover { background: var(--brand-orange-hover); }
+    .button-secondary { background: rgba(255,255,255,0.1); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); }
+
+    .hero-card {
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(232, 90, 36, 0.3);
+      padding: 30px; border-radius: 12px; text-align: center;
+    }
+    .hero-card strong { font-size: 1.4rem; color: var(--brand-orange); display: block; margin-bottom: 8px; }
+
+    /* Trust Stats Bar */
+    .trust-bar {
+      background: #ffffff; padding: 22px 6%; display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px; border-bottom: 1px solid #e2e8f0; text-align: center;
+    }
+    .stat-item strong { display: block; font-size: 1.15rem; color: var(--brand-navy); }
+    .stat-item span { font-size: 0.85rem; color: var(--text-muted); }
+
+    /* General Section Styling */
+    .section { padding: 60px 6%; max-width: 1200px; margin: 0 auto; }
+    .section-label { color: var(--brand-orange); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px; }
+    .section h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--brand-navy); margin-bottom: 16px; }
+
+    /* Service Cards Grid */
+    .service-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 30px;
+    }
+    .service-card {
+      background: #ffffff; padding: 26px; border-radius: 8px; border: 1px solid #e2e8f0;
+      border-top: 3px solid var(--brand-orange);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 10px 18px rgba(0,0,0,0.06); }
+    .service-card span { color: var(--brand-navy); background: #f1f5f9; font-weight: 700; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem; }
+    .service-card h3 { font-size: 1.2rem; margin: 12px 0 8px; color: var(--brand-navy); }
+    .service-card p { color: var(--text-muted); font-size: 0.95rem; }
+
+    /* Promise Box */
+    .promise-card { background: var(--brand-navy); color: #ffffff; padding: 40px 30px; border-radius: 12px; border-left: 6px solid var(--brand-orange); }
+    .promise-card h2 { color: #ffffff; }
+    .promise-card p { color: #cbd5e1; margin-bottom: 24px; }
+    .promise-points { display: flex; flex-wrap: wrap; gap: 12px; }
+    .promise-points span { background: rgba(255,255,255,0.12); padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; }
+
+    /* Contact Links Grid */
+    .contact-actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 25px; }
+    .contact-action {
+      background: #ffffff; border: 1px solid #cbd5e1; padding: 20px; border-radius: 8px;
+      text-decoration: none; color: var(--text-dark); transition: all 0.2s;
+    }
+    .contact-action:hover { border-color: var(--brand-orange); box-shadow: 0 4px 12px rgba(232, 90, 36, 0.1); }
+    .contact-action b { font-size: 1.05rem; color: var(--brand-navy); display: block; margin-bottom: 4px; }
+    .contact-action span { font-size: 0.9rem; color: var(--text-muted); }
+
+    /* Prominent GSTIN & Address Banner */
+    .address-strip {
+      background: var(--brand-navy); color: #cbd5e1; padding: 35px 6%; font-size: 0.95rem;
+      display: flex; flex-direction: column; gap: 18px; border-top: 3px solid var(--brand-orange);
+    }
+    @media (min-width: 768px) {
+      .address-strip { flex-direction: row; justify-content: space-between; align-items: center; }
+    }
+    .address-strip strong { color: #ffffff; font-size: 1.1rem; }
+    .gstin-badge {
+      background: var(--brand-orange); color: #ffffff; padding: 10px 18px; border-radius: 6px;
+      font-weight: 700; display: inline-block; font-size: 1rem; letter-spacing: 0.5px;
+    }
+
+    /* Footer */
+    footer { background: #0b131f; color: #64748b; padding: 20px 6%; font-size: 0.85rem; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- Clean Single Logo Header -->
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Arihant Enterprises Home">
+      <img class="brand-logo-img" src="logo.jpeg" alt="Arihant Enterprises" />
+    </a>
+    <div class="header-actions">
+      <a class="header-link link-call" href="tel:+919825336767">📞 Call Us</a>
+      <a class="header-link link-wa" href="https://wa.me/919825336767?text=Hello%20Arihant%20Enterprises%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Surat, Gujarat · Textile Solutions</span>
+        <h1>Fabric made for <em>your</em> next idea.</h1>
+        <p class="lead">
+          Your one-stop partner for polyester fabric, digital sublimation printing, dyeing and made-to-order textile solutions.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://wa.me/919825336767?text=Hello%20Arihant%20Enterprises%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener">
+            WhatsApp Us ↗
+          </a>
+          <a class="button button-secondary" href="#contact">Contact Us</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <strong>QUALITY IN EVERY ROLL</strong>
+        <p style="color: #cbd5e1; font-size: 0.9rem;">Polyester Fabrics · Digital Printing · Dyeing</p>
+      </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+      <div class="stat-item">
+        <strong>100% Quality</strong>
+        <span>Checked Rolls</span>
+      </div>
+      <div class="stat-item">
+        <strong>HD Digital</strong>
+        <span>Sublimation Prints</span>
+      </div>
+      <div class="stat-item">
+        <strong>Custom GSM</strong>
+        <span>Made-to-Order</span>
+      </div>
+      <div class="stat-item">
+        <strong>Pan-India</strong>
+        <span>Fast Dispatch</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="section-label">01 / About us</div>
+      <h2>Built around quality, finished with care.</h2>
+      <p style="color: var(--text-muted); margin-bottom: 12px; font-size: 1.05rem;">
+        <strong>Arihant Enterprises</strong> is a trusted partner for polyester fabrics and textile processing in Surat, Gujarat. We provide high-definition digital sublimation printing, dyeing, job work, and custom fabric development for businesses that value consistent quality.
+      </p>
+      <p style="color: var(--text-muted); font-size: 1.05rem;">
+        From initial fabric selection to finished rolls, we help turn your requirements into made-to-order solutions delivered with strict attention to quality and time.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services" style="background: #ffffff; max-width: 100%; padding-left: 6%; padding-right: 6%;">
+      <div style="max-width: 1200px; margin: 0 auto;">
+        <div class="section-label">02 / What we do</div>
+        <h2>Textile solutions, all under one roof.</h2>
+        <div class="service-grid">
+          <article class="service-card">
+            <span>01</span>
+            <h3>Digital Printing</h3>
+            <p>Sharp, vibrant sublimation prints for polyester fabrics and custom designs.</p>
+          </article>
+          <article class="service-card">
+            <span>02</span>
+            <h3>Fabric Dyeing</h3>
+            <p>Reliable dyeing and textile processing for the finish your product needs.</p>
+          </article>
+          <article class="service-card">
+            <span>03</span>
+            <h3>Polyester Fabric</h3>
+            <p>A broad range of polyester fabrics for garments, sportswear, and activewear.</p>
+          </article>
+          <article class="service-card">
+            <span>04</span>
+            <h3>Job Work</h3>
+            <p>Flexible production support for brands, traders, and garment manufacturers.</p>
+          </article>
+          <article class="service-card">
+            <span>05</span>
+            <h3>Design Development</h3>
+            <p>Assistance with fabric design development for your product requirement.</p>
+          </article>
+          <article class="service-card">
+            <span>06</span>
+            <h3>Made to Order</h3>
+            <p>Customised fabric solutions developed strictly to your specifications.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promise Section -->
+    <section class="section" id="why-us">
+      <div class="promise-card">
+        <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--brand-orange);">The Arihant Promise</span>
+        <h2 style="margin-top: 6px;">Quality first. Always.</h2>
+        <p>We bring together product quality, custom production, and on-time delivery so you can move from idea to finished fabric with confidence.</p>
+        <div class="promise-points">
+          <span>Premium Quality</span>
+          <span>Custom Production</span>
+          <span>On-Time Delivery</span>
+          <span>Bulk Orders</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section class="section" id="contact">
+      <div class="section-label">03 / Contact & Location</div>
+      <h2>Let’s make something exceptional.</h2>
+      <p style="color: var(--text-muted);">For product enquiries, samples, or custom requirements, get in touch with us directly.</p>
+
+      <div class="contact-actions">
+        <a class="contact-action" href="tel:+919825336767">
+          <b>Call Us</b>
+          <span>+91 98253 36767</span>
+        </a>
+        <a class="contact-action" href="https://wa.me/919825336767?text=Hello%20Arihant%20Enterprises%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener">
+          <b>WhatsApp Direct</b>
+          <span>Message us directly ↗</span>
+        </a>
+        <a class="contact-action" href="mailto:digital.arihantent@gmail.com">
+          <b>Email</b>
+          <span>digital.arihantent@gmail.com</span>
+        </a>
+        <a class="contact-action" href="https://maps.app.goo.gl/d9Dm5mm7cjmCMKSr6" target="_blank" rel="noopener">
+          <b>Google Maps Location</b>
+          <span>Open Factory Map ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Address & GSTIN Strip -->
+    <section class="address-strip">
+      <div>
+        <strong>ARIHANT ENTERPRISES</strong><br />
+        1st &amp; 2nd Floor, Plot No. 4021–22, Diamond Eco Park, Gabheni Circle,<br />
+        Near E-Com Warehouse, Sachin INA, Surat – 394230, Gujarat, India
+      </div>
+      <div>
+        <div class="gstin-badge">GSTIN: 24AHZPA4472A2ZH</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <span>© <span id="year"></span> Arihant Enterprises. All Rights Reserved.</span>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
