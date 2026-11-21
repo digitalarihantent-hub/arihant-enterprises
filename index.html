@@ -2,26 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Polyester Fabric, Dyeing & Digital Printing in Surat | Arihant Enterprises</title>
   <meta name="description" content="Arihant Enterprises, Surat supplies polyester fabric, grey fabric and yarn, dyed and printed textiles, digital sublimation printing, cotton and polyester processing, and custom textile development." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://arihantprint.in/" />
+  <link rel="canonical" href="https://www.arihantprint.in/" />
   <meta name="author" content="Arihant Enterprises" />
   <meta name="theme-color" content="#ffffff" />
 
   <meta property="og:title" content="Arihant Enterprises | Polyester Fabric Digital Printing in Surat" />
   <meta property="og:description" content="Polyester fabric digital sublimation printing, dyeing, textile processing and custom development from Surat, Gujarat." />
-  <meta property="og:url" content="https://arihantprint.in/" />
+  <meta property="og:url" content="https://www.arihantprint.in/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Arihant Enterprises" />
+  <meta property="og:image" content="https://www.arihantprint.in/logo.jpeg" />
+  <meta property="og:image:alt" content="Arihant Enterprises logo" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Arihant Enterprises | Polyester Fabric Digital Printing in Surat" />
+  <meta name="twitter:description" content="Polyester fabric digital sublimation printing, dyeing, textile processing and custom development from Surat, Gujarat." />
+  <meta name="twitter:image" content="https://www.arihantprint.in/logo.jpeg" />
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Arihant Enterprises",
-    "url": "https://arihantprint.in/",
+    "url": "https://www.arihantprint.in/",
     "telephone": "+91-98253-36767",
     "email": "info@arihantprint.in",
     "contactPoint": [
@@ -94,7 +100,7 @@
     }
     .brand-link { display: flex; align-items: center; text-decoration: none; }
     .original-logo-img {
-      height: 42px; width: auto; object-fit: contain; display: block;
+      height: 42px; width: auto; max-width: 46vw; object-fit: contain; display: block;
       mix-blend-mode: multiply; filter: contrast(120%) brightness(102%);
     }
     @media (min-width: 768px) {
@@ -102,7 +108,7 @@
       .original-logo-img { height: 50px; }
     }
 
-    .header-actions { display: flex; gap: 8px; align-items: center; }
+    .header-actions { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
     .btn-header {
       padding: 8px 14px; border-radius: 8px; font-weight: 700; font-size: 0.82rem;
       text-decoration: none; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 4px;
@@ -166,7 +172,7 @@
       padding: 22px; border-radius: 14px; box-shadow: 0 10px 25px rgba(0,0,0,0.03);
       text-align: left;
     }
-    .hero-card h3 { font-size: 1.1rem; color: var(--brand-navy); margin-bottom: 6px; font-weight: 800; }
+    .hero-card h2 { font-size: 1.1rem; color: var(--brand-navy); margin-bottom: 6px; font-weight: 800; }
     .hero-card p { font-size: 0.88rem; color: #64748b; }
 
     /* B2B HIGHLIGHT BOX */
@@ -245,6 +251,7 @@
     .inquiry-info p { color: #cbd5e1; font-size: 0.9rem; margin-bottom: 20px; }
     .contact-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
     .contact-list li { display: flex; gap: 10px; align-items: center; font-size: 0.9rem; word-break: break-all; }
+    .contact-list a { color: inherit; text-underline-offset: 2px; }
 
     .inquiry-form-card {
       background: #ffffff; border: 1px solid var(--border-color); padding: 24px; border-radius: 14px;
@@ -301,6 +308,18 @@
       box-shadow: 0 6px 20px rgba(37,211,102,0.4); display: flex; align-items: center; gap: 6px;
       -webkit-tap-highlight-color: transparent;
     }
+    .floating-wa:focus-visible, .btn-header:focus-visible, .btn:focus-visible, .contact-card:focus-visible {
+      outline: 3px solid var(--brand-orange);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 480px) {
+      .site-header { gap: 8px; padding: 8px 4%; }
+      .original-logo-img { height: 36px; max-width: 32vw; }
+      .header-actions { gap: 6px; }
+      .header-actions .btn-header:first-child { display: none; }
+      .btn-header { padding: 8px 9px; font-size: 0.72rem; }
+    }
 
     /* FOOTER */
     footer { background: #111528; color: #64748b; padding: 20px 4%; font-size: 0.82rem; text-align: center; }
@@ -309,14 +328,14 @@
 <body>
 
   <!-- FLOATING WHATSAPP BUTTON -->
-  <a class="floating-wa" href="https://wa.me/919825336767?text=Hello%20Arihant%20Enterprises%2C%20I%20have%20a%20bulk%20fabric%20requirement." target="_blank" rel="noopener">
+  <a class="floating-wa" href="https://wa.me/919825336767?text=Hello%20Arihant%20Enterprises%2C%20I%20have%20a%20bulk%20fabric%20requirement." target="_blank" rel="noopener noreferrer" aria-label="Chat with Arihant Enterprises on WhatsApp">
     💬 WhatsApp Chat
   </a>
 
   <!-- HEADER -->
   <header class="site-header">
     <a href="#top" class="brand-link" aria-label="Arihant Enterprises Home">
-      <img class="original-logo-img" src="logo.jpeg" alt="Arihant Enterprises Logo" />
+      <img class="original-logo-img" src="logo.jpeg" alt="Arihant Enterprises Logo" decoding="async" />
     </a>
 
     <div class="header-actions">
@@ -344,7 +363,7 @@
           </div>
         </div>
         <div class="hero-card">
-          <h3>FAST PRODUCTION & DELIVERY</h3>
+          <h2>FAST PRODUCTION & DELIVERY</h2>
           <p>✔ Ready Design + Ready Fabric = <strong>2 Days Delivery</strong><br />
              ✔ Full Fresh Batch Production = <strong>7 Days Delivery</strong></p>
         </div>
@@ -481,7 +500,7 @@
           <h3>Direct Factory Connect</h3>
           <p>Submit your fabric requirements directly or get in touch for bulk pricing.</p>
           <ul class="contact-list">
-            <li>📞 <strong>Call:</strong> +91 98253 36767</li>
+            <li>📞 <strong>Call:</strong> <a href="tel:+919825336767">+91 98253 36767</a></li>
             <li>💬 <strong>WhatsApp:</strong> +91 98253 36767</li>
             <li>✉️ <strong>Main / Admin:</strong> info@arihantprint.in</li>
             <li>📈 <strong>Sales:</strong> sale@arihantprint.in</li>
@@ -494,15 +513,16 @@
           <form id="whatsappForm" onsubmit="sendToWhatsApp(event)">
             <div class="form-group">
               <label for="fullName">Name / Company Name *</label>
-              <input type="text" id="fullName" class="form-control" placeholder="Enter your name or firm" required />
+              <input type="text" id="fullName" name="fullName" class="form-control" autocomplete="name" placeholder="Enter your name or firm" required />
             </div>
             <div class="form-group">
               <label for="phone">Phone / WhatsApp Number *</label>
-              <input type="tel" id="phone" class="form-control" placeholder="Enter 10-digit mobile number" required />
+              <input type="tel" id="phone" name="phone" class="form-control" autocomplete="tel" inputmode="tel" placeholder="Enter your phone number" required />
             </div>
             <div class="form-group">
               <label for="serviceType">Product Required *</label>
-              <select id="serviceType" class="form-control" required>
+              <select id="serviceType" name="serviceType" class="form-control" required>
+                <option value="" disabled selected>Select a product or service</option>
                 <option value="Digital Sublimation Printing (MOQ 240kg/500m)">Digital Sublimation Printing (MOQ 240kg/500m)</option>
                 <option value="Dyed Fabric Supply (MOQ 240kg/shade)">Dyed Fabric Supply (MOQ 240kg/shade)</option>
                 <option value="Super Poly Full Dull">Super Poly Full Dull</option>
@@ -516,7 +536,7 @@
             </div>
             <div class="form-group">
               <label for="message">Requirement Details (Quantity, Design, GSM) *</label>
-              <textarea id="message" class="form-control" placeholder="Enter required meters, kg, or design info..." required></textarea>
+              <textarea id="message" name="message" class="form-control" placeholder="Enter required meters, kg, or design info..." required></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Inquiry via WhatsApp ↗</button>
           </form>
@@ -595,8 +615,9 @@
       const service = document.getElementById('serviceType').value;
       const message = document.getElementById('message').value;
 
-      const text = `*New Factory Inquiry*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Product:* ${service}%0A*Details:* ${message}`;
-      window.open(`https://wa.me/919825336767?text=${text}`, '_blank');
+      const text = `New Factory Inquiry\n\nName: ${name}\nPhone: ${phone}\nProduct: ${service}\nDetails: ${message}`;
+      const url = `https://wa.me/919825336767?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
     }
   </script>
 </body>
